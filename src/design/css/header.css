@@ -1,0 +1,168 @@
+.header {
+    width: 100%;
+    background-color: white;
+}
+
+/* Header top */
+
+.header-top {
+    align-items: center;
+    background: var(--primary);
+    display: flex;
+    justify-content: center;
+}
+
+.header-top-wrapper {
+    align-items: center;
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    max-width: 1240px;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.header-top-text {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.header-top-language {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.header-top-language img {
+    height: 20px;
+    object-fit: contain;
+    width: 20px;
+}
+
+.header-top-language span {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 6px;
+}
+
+.header-box {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.header-wrapper {
+    align-items: center;
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    max-width: 1240px;
+    padding: 0 20px;
+    transition: height .2s;
+    width: 100%;
+}
+
+.header-left-box {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.header-right-box {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-logo a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-logo img {
+    object-fit: contain;
+    width: 55px;
+}
+
+.header-logo span {
+    color: #222;
+    font-size: 24px;
+    margin-left: 15px;
+    font-weight: 400;
+}
+
+.mobile-logo {
+    display: none;
+    padding-top: 4px;
+}
+
+/* Header user */
+
+.header-user {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+.header-user img {
+    height: 30px;
+    object-fit: contain;
+    width: 30px;
+}
+
+.header-user-text {
+    margin-left: 10px;
+}
+
+.header-user-text span {
+    color: #4a5568;
+    font-size: 13px;
+}
+
+.header-user-text p {
+    color: #222;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: -2px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .header-wrapper {
+        height: 75px;
+        padding: 0 15px;
+    }
+
+    .header-logo img {
+        width: 40px;
+    }
+
+    .header-logo span {
+        font-size: 20px;
+        margin-left: 7px;    
+    }
+
+    .header-user {
+        margin-left: 15px;
+    }
+
+    .header-user img {
+        height: 28px;
+        width: 28px;
+    }
+
+    .header-user-text {
+        margin-left: 7px;
+    }
+
+    .header-user-text span {
+        font-size: 11px;
+    }
+}

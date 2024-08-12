@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'Google Sans';
+    src: url('../fonts/GoogleSans-Regular.ttf');
+    src: url('../fonts/GoogleSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Google Sans';
+    src: url('../fonts/GoogleSans-Medium.ttf');
+    src: url('../fonts/GoogleSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Google Sans';
+    src: url('../fonts/GoogleSans-Bold.ttf');
+    src: url('../fonts/GoogleSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+:root {
+    --primary: #2c3d50;
+    --secondary: #a0a0a1;
+    --primary-hover: #386394;
+    touch-action: none;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Google Sans', sans-serif;
+}
+
+html,
+body,
+#root {
+    height: 100%;
+    scrollbar-color: #a9a8a800;
+    scrollbar-width: thin;
+    background: #f4f5f6;
+    overflow: hidden;
+    margin: 0;
+}
+
+html:hover,
+body:hover,
+#root:hover {
+    scrollbar-color: #a9a8a8ab;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+::-webkit-scrollbar {
+    display: none;
+    height: 0px;
+    width: 30px;
+}
+
+body::-webkit-scrollbar,
+html::-webkit-scrollbar,
+#root::-webkit-scrollbar,
+div::-webkit-scrollbar {
+    display: none;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+}
+
+.app {
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+}
+
+a {
+    text-decoration: none;
+}
+
+.page {
+    width: 100%;
+    min-height: 400px;
+    max-width: 1240px;
+    padding: 30px 30px;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 40px;
+    align-self: center;
+    background-color: white;
+    position: relative;
+}
+
+.page-title {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .page {
+        padding: 20px;
+        margin-top: 25px;
+    }
+
+    .page-title {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .information .title {
+        font-size: 20px;
+    }
+
+    .review-title {
+        font-size: 18px;
+    }
+}

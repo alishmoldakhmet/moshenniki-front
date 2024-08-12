@@ -1,0 +1,354 @@
+.add-scammer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0px 60px 0px;
+}
+
+.add-scammer-wrapper {
+    max-width: 1240px;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.add-scammer-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.add-scammer-back {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background: #F8F8F8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 3px;
+    cursor: pointer;
+}
+
+.add-scammer-back img {
+    width: 12px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.add-scammer-title h2 {
+    padding-left: 10px;
+    font-size: 30px;
+    color: #222;
+    font-weight: bold;
+}
+
+.add-scammer-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+
+/* ORDER FORM */
+.add-scammer-form {
+    width: calc(100% - 400px);
+}
+
+.add-scammer-form-box {
+    padding: 20px 0;
+    border-top: 0.3px solid rgba(74, 85, 104, 0.3);
+}
+
+.add-scammer-form h3 {
+    font-size: 20px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.add-scammer-form-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.add-scammer-form-row p {
+    font-size: 14px;
+    color: #222;
+    width: 30%;
+}
+
+.add-scammer-form-row input {
+    width: 70%;
+    height: 50px;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    padding-left: 12px;
+    outline: none;
+    font-weight: 500;
+}
+
+.add-scammer-form-row textarea {
+    width: 70%;
+    height: 120px;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+    font-weight: 500;
+}
+
+
+/* PAYMENT METHODS */
+.add-scammer-anonimously {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.anonimously {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.anonimously-disabled {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+}
+
+
+.checked {
+    border: 4px solid #FF4F4F;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.checked-inner {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background: #FF4F4F;
+}
+
+.unchecked {
+    border: 3px solid #777777;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+
+
+.add-scammer-box-button {
+    background: var(--primary);
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 0 20px #eaeaea;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.add-scammer-box-button:hover {
+    transform: scale(1.05);
+}
+
+
+.add-scammer-box-mobile-bottom {
+    position: fixed;
+    z-index: 1;
+    bottom: 80px;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: white;
+    border-top: 1px solid #F1F1F1;
+    box-shadow: 0 2px 24px 0 rgb(0 0 0 / 15%);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-scammer-box-mobile-button {
+    background: var(--primary);
+    width: calc(100% - 40px);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 0 20px #eaeaea;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.add-scammer-box-mobile-button:hover {
+    transform: scale(1.05);
+}
+
+
+/* CONTENT GALLERY */
+.content-gallery-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.content-gallery-file {
+    margin-bottom: 10px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.content-gallery-button {
+    border: 2px dashed #666;
+    width: 70px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #FAFAFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.content-gallery-button img {
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+}
+
+
+.content-gallery-file input[type=file] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    display: block;
+    width: 0;
+    height: 0;
+}
+
+.content-gallery-item {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    margin-right: 10px;
+    background-color: #FAFAFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.content-gallery-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.content-gallery-remove {
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    width: 26px;
+    height: 26px;
+    border-radius: 13px;
+    box-shadow: 0 0 15px #999;
+    background: #f44336;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.content-gallery-remove img {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    .add-scammer-box-mobile-bottom {
+        display: flex;
+    }
+
+    .add-scammer-title {
+        display: none;
+    }
+
+    .add-scammer-box {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .add-scammer-form h3 {
+        font-size: 16px;
+    }
+
+    .add-scammer-form {
+        width: 100%;
+    }
+
+    .add-scammer-form-box {
+        border-top: none;
+    }
+
+    .add-scammer-form-row {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 5px 0;
+    }
+
+    .add-scammer-form-row p {
+        width: 100%;
+        color: #999;
+        font-size: 12px;
+        padding-bottom: 4px;
+    }
+
+    .add-scammer-form-row input {
+        width: 100%;
+        height: 40px;
+    }
+
+    .add-scammer-form-row textarea {
+        width: 100%;
+    }
+
+    .add-scammer-box-button {
+        display: none;
+    }
+
+}
+

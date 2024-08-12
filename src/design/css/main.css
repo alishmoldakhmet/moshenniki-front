@@ -1,0 +1,226 @@
+
+.switch-selector {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+}
+
+.switch-selector .select {
+    height: 40px;
+    padding: 10px 20px;
+    /* margin-right: 10px; */
+    background-color: rgba(0, 0, 0, 0.221);
+    /* border: 1px solid rgb(70, 70, 70); */
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.4;
+    transition: transform 0.4s;
+    min-width: 170px
+}
+
+.switch-selector .select.selected {
+    background-color: var(--primary);
+    color: white;
+    box-shadow: 0px 0px 5px var(--primary);
+    transform: scale(1.03);
+    z-index: 1;
+    opacity: 1;
+    cursor: default;
+}
+
+
+
+/* User info */
+
+.information {
+    margin-top: 20px;
+}
+
+.information .title {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.userinfo {
+    margin: 15px 0px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #f4f5f6;
+}
+
+.userinfo p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.userinfo p span {
+    font-weight: 500;
+}
+
+.userinfo p span .name-item {
+    background-color: white;
+    padding: 1px 6px;
+    border-radius: 2px;
+    margin: 0px 5px;
+}
+
+.review-title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.reviews {
+    margin: 15px 0px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.review-item {
+    background-color: #f4f5f6;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+.review-item:hover {
+    background-color: var(--primary-hover);
+    color: white;
+}
+
+
+.review-item .title {
+    font-size: 17px;
+    font-weight: 500;
+    width: 80%;
+}
+
+.review-item .inform {
+    margin: 5px 0px;
+}
+
+.review-item .images img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    transition: transform 0.4s;
+    border: 1px solid rgba(0, 0, 0, 0.486);
+}
+
+.review-item .images img:hover {
+    transform: scale(3);
+    transition: transform 0.4s;
+}
+
+.review-item .author {
+    position: absolute;
+    top: 11px;
+    right: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.review-item .author.anonymously {
+    color: rgb(26, 36, 112);
+}
+
+.review-item:hover .author.anonymously {
+    color: rgb(220, 227, 255);
+}
+
+.review-item .author img {
+    width: 12px;
+    margin-left: 3px;
+    margin-bottom: 1px;
+}
+
+.review-item .author .white, .review-item .rating .white {
+    display: none;
+}
+
+.review-item:hover .author .black, .review-item:hover .rating .black {
+    display: none;
+}
+
+.review-item:hover .author .white, .review-item:hover .rating .white {
+    display: flex;
+}
+
+.review-item .rating {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.review-item .rating img {
+    width: 13px;
+    margin-left: 2px;
+    margin-bottom: 2px;
+}
+
+/* Add scammer button */
+
+.add-scammer-button-box {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+
+.add-button {
+    background-color: #0070eb;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: 400;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px transparent;
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.add-button:hover {
+    /* background-color: #4d9aeb; */
+    transform: scale(1.02);
+    box-shadow: 0px 0px 10px #0070eb;
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.add-button:active {
+    opacity: 0.7;
+}
+
+
+@media screen and (max-width: 768px) {
+    .switch-selector .select {
+        padding: 5px 20px;
+        font-size: 15px;
+    }
+
+    .userinfo {
+        padding: 10px;
+    }
+
+    .userinfo p {
+        font-size: 16px;
+    }
+
+    .review-item {
+        padding: 10px 10px;
+    }
+}

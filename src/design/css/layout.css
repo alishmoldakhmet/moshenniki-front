@@ -1,0 +1,129 @@
+
+/* LOADING STYLES */
+.loading {
+    height: 400px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading span {
+    font-size: 30px;
+}
+
+
+
+/* NETWORK STYLES */
+.network {
+    height: 400px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.network img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    opacity: 0.5;
+}
+
+.network h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #222
+}
+
+.network p {
+    font-size: 14px;
+    margin-top: 5px;
+    color: #666
+}
+
+.network-button {
+    width: 120px;
+    height: 40px;
+    background: #222;
+    font-size: 14px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.network-button:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+/* NETWORK STYLES */
+.empty-page {
+    height: 400px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.empty-page img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.empty-page h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #222;
+    text-align: center;
+}
+
+.empty-page p {
+    font-size: 14px;
+    margin-top: 5px;
+    color: #666;
+    text-align: center;
+}
+
+.empty-page-button {
+    width: 100%;
+    max-width: 200px;
+    height: 44px;
+    background: var(--primary);
+    font-size: 14px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.empty-page-button:hover {
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+    .empty-page {
+        height: calc(100vh - 170px);
+    }
+}
